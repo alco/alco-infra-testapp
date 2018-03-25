@@ -1,2 +1,2 @@
-release: mix ecto.create
+release: mix ecto.migrate
 web: mix phx.server
