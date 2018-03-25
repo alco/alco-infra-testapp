@@ -12,9 +12,4 @@ config :test_app, TestAppWeb.Endpoint,
   secret_key_base: "75vieY9ahxzc1NvELdu8opB90WJ9VUhDT5gER8ujEl/K9G/9kKhrC5sEP6FIo3HH"
 
 # Configure your database
-config :test_app, TestApp.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "test_app_prod",
-  pool_size: 15
+config :test_app, TestApp.Repo, adapter: Ecto.Adapters.Postgres
