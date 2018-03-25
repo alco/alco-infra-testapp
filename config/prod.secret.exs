@@ -12,4 +12,6 @@ config :test_app, TestAppWeb.Endpoint,
   secret_key_base: "75vieY9ahxzc1NvELdu8opB90WJ9VUhDT5gER8ujEl/K9G/9kKhrC5sEP6FIo3HH"
 
 # Configure your database
-config :test_app, TestApp.Repo, adapter: Ecto.Adapters.Postgres
+config :test_app, TestApp.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL")
